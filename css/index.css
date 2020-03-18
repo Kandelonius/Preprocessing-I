@@ -100,10 +100,9 @@ section {
 body {
   line-height: 1;
 }
-ol,
-ul {
-  list-style: none;
-}
+/*ol, ul {
+	list-style: none;
+}*/
 blockquote,
 q {
   quotes: none;
@@ -135,7 +134,7 @@ body {
 }
 #nav-div {
   padding: 2%;
-  background-color: #a897bf;
+  background-color: #435073;
   display: flex;
   justify-content: space-between;
 }
@@ -147,12 +146,38 @@ body {
   font-size: 1.5rem;
 }
 #main-content {
-  margin-top: 4%;
   display: flex;
 }
 .left-section {
+  padding-top: 3%;
+  background-color: #a897bf;
   width: 30%;
 }
+.left-section #myPicture {
+  display: flex;
+  justify-content: center;
+}
+.left-section #myPicture img {
+  width: 90%;
+}
+.left-section .languages {
+  display: flex;
+  width: 100%;
+}
+.left-section .languages div {
+  width: 40%;
+  margin-right: 5%;
+}
+.left-section ul {
+  padding-left: 25px;
+}
 .right-section {
-  width: 70%;
+  margin: 4% 0 0 3%;
+  width: 67%;
+}
+.connect {
+  justify-content: center;
+}
+.connect ul {
+  list-style: none;
 }
