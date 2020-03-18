@@ -5,7 +5,7 @@
 */
 
 html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+ blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -56,4 +56,35 @@ table {
 html, body {
     height: 100%;
 }
-
+/****End reset ****/
+@main-color: #435073;
+@secondary-color: #a897bf;
+/****Mixins****/
+.whole-container{
+	max-width:800px;
+	margin:0 auto;
+}
+#nav-div {
+	padding:2%;
+	background-color: @secondary-color;
+	display: flex;
+	justify-content: space-between;
+	h1{
+		font-size: 2rem;
+	}
+	a {
+		margin-left:20px;
+	  	font-size: 1.5rem;
+  }
+}
+#main-content{
+	margin-top:4%;
+	display:flex;
+}
+.left-section{
+	
+	width:30%;
+}
+.right-section{
+	width:70%;
+}
