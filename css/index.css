@@ -122,15 +122,28 @@ table {
 * {
   box-sizing: border-box;
 }
+@media (max-width: 500px) {
+  ul {
+    list-style: none;
+  }
+}
 html,
 body {
   height: 100%;
 }
 /****End reset ****/
 /****Mixins****/
+/****variables****/
 .whole-container {
   max-width: 800px;
+  border: 2px solid #144044;
   margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .whole-container {
+    max-width: 320px;
+    border: none;
+  }
 }
 #nav-div {
   padding: 2%;
@@ -142,16 +155,33 @@ body {
   font-size: 2rem;
 }
 #nav-div a {
+  color: #a897bf;
   margin-left: 20px;
   font-size: 1.5rem;
 }
 #main-content {
   display: flex;
 }
+@media (max-width: 500px) {
+  #main-content {
+    flex-direction: column;
+  }
+}
 .left-section {
   padding-top: 3%;
   background-color: #a897bf;
   width: 30%;
+}
+@media (max-width: 500px) {
+  .left-section {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 500px) {
+  .left-section {
+    width: 100%;
+  }
 }
 .left-section #myPicture {
   display: flex;
@@ -159,6 +189,11 @@ body {
 }
 .left-section #myPicture img {
   width: 90%;
+}
+@media (max-width: 500px) {
+  .left-section #myPicture img {
+    display: none;
+  }
 }
 .left-section .languages {
   display: flex;
@@ -171,13 +206,25 @@ body {
 .left-section ul {
   padding-left: 25px;
 }
+.left-section .connect {
+  flex-direction: column;
+}
+.left-section .connect nav {
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  .left-section .connect {
+    display: none;
+  }
+}
 .right-section {
   margin: 4% 0 0 3%;
   width: 67%;
 }
-.connect {
-  justify-content: center;
-}
-.connect ul {
-  list-style: none;
+@media (max-width: 500px) {
+  .right-section {
+    width: 100%;
+  }
 }
