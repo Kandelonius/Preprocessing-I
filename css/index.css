@@ -151,13 +151,30 @@ body {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  #nav-div {
+    display: flex;
+    flex-direction: column;
+  }
+}
 #nav-div h1 {
   font-size: 2rem;
+}
+@media (max-width: 500px) {
+  #nav-div h1 {
+    display: flex;
+    justify-content: center;
+  }
 }
 #nav-div a {
   color: #a897bf;
   margin-left: 20px;
   font-size: 1.5rem;
+}
+@media (max-width: 500px) {
+  #nav-div a {
+    font-size: 1rem;
+  }
 }
 #main-content {
   display: flex;
@@ -176,6 +193,7 @@ body {
   .left-section {
     display: flex;
     flex-direction: column-reverse;
+    padding: 2%;
   }
 }
 @media (max-width: 500px) {
@@ -225,6 +243,15 @@ body {
 }
 @media (max-width: 500px) {
   .right-section {
+    margin: 0 auto;
     width: 100%;
+    background-color: #144044;
+    padding: 2%;
+  }
+  .right-section h2,
+  .right-section p,
+  .right-section h3,
+  .right-section li {
+    color: #a897bf;
   }
 }
